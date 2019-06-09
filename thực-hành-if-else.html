@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập</title>
+</head>
+<body>
+<input type="number" id="year"><br>
+<button type="button" onclick="tinh();"><b>submit</b></button>
+<script>
+    function tinh() {
+        let nam = parseInt(document.getElementById('year').value);
+        let ketqua;
+        if (nam % 4 == 0 && nam % 100 != 0) {
+            ketqua = 'nhuan';
+        } else if (nam % 100 == 0 && nam % 400 == 0) {
+            ketqua = 'nhuan';
+        } else ketqua = 'khong-nhuan';
+        alert(ketqua);
+    }
+</script>
+</body>
+</html>
